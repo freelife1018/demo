@@ -1,0 +1,16 @@
+spring:
+   datasource:
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 180000
+      maximum-pool-size: 30
+      minimum-idle: 2
+   h2:
+      console:
+         enabled: true
+h2:
+  datasource:
+    url: jdbc:h2:mem:h2test
+    username: sa
+    password: password  
